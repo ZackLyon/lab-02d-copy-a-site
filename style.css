@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
-  border: 1px black solid;
+  /* border: 1px black solid; */
   height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 .outer-box {
@@ -22,45 +25,47 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-}
-.logo > span {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-}
-#logo-1 {
-  justify-content: flex-start;
-}
-
-#logo-2 {
-  justify-content: center;
-}
-
-#logo-3 {
-  justify-content: flex-end;
+  object-fit: contain;
+  height: 220px;
+  margin-top: 20px;
+  margin-left: 40px;
+  padding-top: 5px;
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
+  padding-left: 40px;
 }
 
 .nav-elem {
   color: slategray;
-  padding: 10px;
-  margin: 10px;
+  margin-top: 40px;
+  margin-left: 10px;
+  /* padding: 5px; */
+  font-size: 1.3rem;
   width: 80px;
   height: 40px;
 }
 
 .nav-bar :first-child {
   color: black;
+}
+
+article {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 40px 1fr 1fr 1fr 1fr 1fr 1fr 0.75fr;
+}
+
+article > img {
+  padding: 5px;
+  object-fit: cover;
+
 }
 
 footer {
