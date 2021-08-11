@@ -26,27 +26,30 @@ header {
 nav {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  position: relative;
+  left: 40px;
 }
 
 .logo {
   object-fit: contain;
   height: 220px;
-  margin-top: 20px;
-  margin-left: 40px;
-  padding-top: 5px;
+  position: relative;
+  top: 25px;
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 .nav-elem {
+  position: relative;
+  left: 10px;
+  top: 10px;
   color: slategray;
-  margin-top: 40px;
-  margin-left: 10px;
-  /* padding: 5px; */
+  /* margin-top: 40px;
+  margin-left: 10px; */
   font-size: 1.3rem;
   width: 80px;
   height: 40px;
@@ -57,9 +60,11 @@ nav {
 }
 
 article {
+  position: relative;
+  left: 40px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 40px 1fr 1fr 1fr 1fr 1fr 1fr 0.75fr;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 0.75fr;
 }
 
 article > img {
@@ -72,7 +77,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 40px;
+  position: relative;
+  left: 40px;
 }
 .contact {
   color: slategray;
