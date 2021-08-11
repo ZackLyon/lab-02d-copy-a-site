@@ -4,6 +4,7 @@
   width: 100%;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .outer-box {
@@ -17,4 +18,57 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+.logo > span {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+#logo-1 {
+  justify-content: flex-start;
+}
+
+#logo-2 {
+  justify-content: center;
+}
+
+#logo-3 {
+  justify-content: flex-end;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-elem {
+  color: slategray;
+  padding: 10px;
+  margin: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.nav-bar :first-child {
+  color: black;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+footer > img {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
 }
